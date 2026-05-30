@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: fact_trips
+    description: "A fact table for taxi trips in NYC"
+    columns:
+      - name: payment_type
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [1, 2, 3, 4, 5]
+                quote: false

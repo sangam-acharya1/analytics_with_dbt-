@@ -1,0 +1,50 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: "raw data sources for nyc taxi rides"
+    database: taxi_rides_ny
+    schema: prod
+
+    tables:
+      - name: green_tripdata
+        description: "green taxi trip data for nyc"
+
+        columns:
+          - name: vendor_id
+            description: "A code indicating the provider associated with the trip record."
+            data_type: integer
+
+            meta:
+              pii: false
+              ownership: data_team
+              importance: high
+              formatting: none
+
+      - name: yellow_tripdata
+        description: "yellow taxi trip data for nyc"
+
+        columns:
+          - name: vendor_id
+            description: "A code indicating the provider associated with the trip record."
+            data_type: integer
+
+            meta:
+              pii: false
+              ownership: data_team
+              importance: high
+              formatting: none
+
+      - name: fhv_tripdata
+        description: "for-hire vehicle (FHV) trip data for nyc"
+
+        columns:
+          - name: vendor_id
+            description: "A code indicating the provider associated with the trip record."
+            data_type: integer
+
+            meta:
+              pii: false
+              ownership: data_team
+              importance: high
+              formatting: none
