@@ -1,4 +1,4 @@
-#  Module 4: Analytics Engineering with dbt (NYC Taxi Data)
+#  Analytics Engineering with dbt (NYC Taxi Data)
 
 
 It builds an analytics pipeline using **dbt** to transform NYC taxi trip data into analytics-ready datasets for reporting and analysis.
